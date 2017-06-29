@@ -1,7 +1,7 @@
 {
     "baseURL": "",
-    "useSSLAzure": false,
-    "useSSL": false,
+    "useSSLAzure": true,
+    "useSSL": true,
     "SSLkey": "cert/server.key",
     "SSLcert": "cert/server.crt",
     "activateAuth": false,
@@ -31,6 +31,13 @@
             "nodeCompliant": true
         },
         {
+            "id": "OFFICE",
+            "name": "Office Addin",
+            "panel": "top",
+            "foldername": "office",
+            "enabled": true
+        },
+        {
             "id": "XHRPANEL",
             "name": "XHR",
             "panel": "top",
@@ -39,24 +46,10 @@
             "nodeCompliant": true
         },
         {
-            "id": "BABYLONINSPECTOR",
-            "name": "Babylon Inspector",
-            "panel": "top",
-            "foldername": "babylonInspector",
-            "enabled": false
-        },
-        {
             "id": "WEBSTANDARDS",
             "name": "Best practices",
             "panel": "top",
             "foldername": "webstandards",
-            "enabled": true
-        },
-        {
-            "id": "NETWORK",
-            "name": "Network Monitor",
-            "panel": "top",
-            "foldername": "networkMonitor",
             "enabled": true
         },
         {
@@ -74,6 +67,51 @@
             "enabled": true
         },
         {
+            "id": "CONSOLE",
+            "name": "Interactive Console",
+            "panel": "bottom",
+            "foldername": "interactiveConsole",
+            "enabled": true,
+            "nodeCompliant": true
+        },
+        {
+            "id": "DOMTIMELINE",
+            "name": "Dom timeline",
+            "panel": "bottom",
+            "foldername": "domtimeline",
+            "enabled": true,
+            "nodeCompliant": false,
+            "nodeOnly": false
+        },
+        {
+            "id": "NETWORK",
+            "name": "Network Monitor",
+            "panel": "bottom",
+            "foldername": "networkMonitor",
+            "enabled": true
+        },
+        {
+            "id": "DEVICE",
+            "name": "My Device",
+            "panel": "bottom",
+            "foldername": "device",
+            "enabled": true
+        },
+        {
+            "id": "MODERNIZR",
+            "name": "Modernizr",
+            "panel": "bottom",
+            "foldername": "modernizrReport",
+            "enabled": true
+        },
+        {
+            "id": "BABYLONINSPECTOR",
+            "name": "Babylon Inspector",
+            "panel": "top",
+            "foldername": "babylonInspector",
+            "enabled": false
+        },
+        {
             "id": "UWP",
             "name": "UWP apps",
             "panel": "top",
@@ -88,20 +126,6 @@
             "enabled": false
         },
         {
-            "id": "DEVICE",
-            "name": "My Device",
-            "panel": "top",
-            "foldername": "device",
-            "enabled": true
-        },
-        {
-            "id": "OFFICE",
-            "name": "Office Addin",
-            "panel": "top",
-            "foldername": "office",
-            "enabled": false
-        },
-        {
             "id": "NODEJS",
             "name": "NodeJS",
             "panel": "top",
@@ -111,21 +135,6 @@
             "nodeOnly": true
         },
         {
-            "id": "CONSOLE",
-            "name": "Interactive Console",
-            "panel": "bottom",
-            "foldername": "interactiveConsole",
-            "enabled": true,
-            "nodeCompliant": true
-        },
-        {
-            "id": "MODERNIZR",
-            "name": "Modernizr",
-            "panel": "bottom",
-            "foldername": "modernizrReport",
-            "enabled": true
-        },
-        {
             "id": "EXPRESS",
             "name": "Express",
             "panel": "bottom",
@@ -133,15 +142,6 @@
             "enabled": true,
             "nodeCompliant": true,
             "nodeOnly": true
-        },
-        {
-            "id": "DOMTIMELINE",
-            "name": "Dom timeline",
-            "panel": "top",
-            "foldername": "domtimeline",
-            "enabled": true,
-            "nodeCompliant": false,
-            "nodeOnly": false
         }
     ]
 }
