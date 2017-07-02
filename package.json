@@ -27,9 +27,7 @@
     "winston": "~1.0.1",
     "winston-azure": "0.0.4",
     "winston-logs-display": "~0.1.1",
-    "xmlhttprequest": "~1.7.0"
-  },
-  "devDependencies": {
+    "xmlhttprequest": "~1.7.0",
     "gulp": "~3.9.1",
     "gulp-concat": "~2.2.0",
     "gulp-filter": "~0.4.1",
@@ -53,6 +51,8 @@
     "build-all": "gulp --gulpfile=./gulpfile.js",
     "build": "node disclaimer.js && npm run build-all",
     "prepublish": "npm run build",
+    "heroku-postbuild": "npm run build",
+    "prestart": "node -e \"console.log('Port: ' + process.env.PORT);\"",
     "start": "node ./Server/server.js"
   },
   "bin": {
